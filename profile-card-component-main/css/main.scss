@@ -1,0 +1,108 @@
+/**************
+    colors   
+**************/
+
+// Primary
+
+$color1: hsl(185, 75%, 39%);
+$color2: hsl(229, 23%, 23%);
+$color3: hsl(227, 10%, 46%);
+
+// Neutral
+$colorLight:rgb(255, 254, 254);
+$colorMedium: hsl(0, 0%, 59%);
+
+/**************
+    fonts  
+**************/
+@mixin fontBold{
+    font-weight: 700;
+    color:$color2;
+}
+@mixin fontLight{
+    font-weight: 400;
+    color:$color3;
+}
+
+/**************
+    body  
+**************/
+body{
+    height:100vh;
+    margin:0;
+    padding:0;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: $color1;
+    background-image: url('../images/bg-pattern-top.svg'), url('../images/bg-pattern-bottom.svg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 36vh, 50vw 50vh;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/**************
+    card  
+**************/
+.card{
+    background-color: $colorLight;
+    border-radius: 7%;
+    height: 425px;
+    width: 370px;
+    text-align: center;
+}
+.cover-profile img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.victor{
+    border-radius: 50%;
+    border:2px solid $colorLight;
+    margin-top:-50px;
+}
+.info{
+    display: flex;
+    justify-content: center;
+    text-align: center;        
+    font-size: 20px; 
+    .name{
+        @include fontBold;
+    }
+    .age{
+        color:$colorMedium;
+        padding-left: 10px;  
+    }
+}
+.city{
+    @include fontLight;
+    margin: -10px 0 20px 0;
+}
+.social{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;    
+    align-items: center;   
+    border-top: 1px solid #ccc;   
+    height: 7.2rem;
+    border-radius: 0 0 20px 20px; 
+    @include fontBold;
+
+    .social-text{
+        @include fontLight;
+        font-size: 12px;
+    }
+}
+
+/**************
+    footer  
+**************/
+.attribution{
+    text-align: center;
+    margin-top: 20px;
+}
