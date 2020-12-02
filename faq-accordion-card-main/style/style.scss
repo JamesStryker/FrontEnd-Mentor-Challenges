@@ -27,4 +27,16 @@ $lightGreyBlue: hsl(240, 5%, 91%);
 
 // font-family: 'Kumbh Sans', sans-serif;
 // font-family: 'Roboto', sans-serif;
-// font-size: 12px;
+// body - font-size: 12px;
+
+/**************
+    Body
+**************/
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: linear-gradient($softViolet,$softBlue);
+    background-repeat: no-repeat;
+    height:100vh;
+}
