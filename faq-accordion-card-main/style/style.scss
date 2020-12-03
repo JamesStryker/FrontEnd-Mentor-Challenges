@@ -27,4 +27,48 @@ $lightGreyBlue: hsl(240, 5%, 91%);
 
 // font-family: 'Kumbh Sans', sans-serif;
 // font-family: 'Roboto', sans-serif;
-// font-size: 12px;
+// body - font-size: 12px;
+
+/**************
+    Body
+**************/
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background: linear-gradient($softViolet,$softBlue);
+    background-repeat: no-repeat;
+    height:100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 81.25%;
+}
+.container{
+    height: 30rem;
+    width: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $lightGreyBlue;
+    box-shadow: 0rem 1rem 2rem #444;
+
+    .container-image{
+        display: block;
+    }
+    .container-accordian{
+        .faq{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .question{
+            color:$mediumGreyBlue;
+            .questionTitle{
+    
+            }
+            .questionAnswer{
+    
+            }
+        }
+    }
+    
+}
+
