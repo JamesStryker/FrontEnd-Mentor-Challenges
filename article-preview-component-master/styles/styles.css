@@ -1,0 +1,104 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ecf2f8;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 700px;
+  height: 270px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  -webkit-box-shadow: 5px 10px 15px -10px #9eafc2;
+          box-shadow: 5px 10px 15px -10px #9eafc2;
+}
+
+.container .container-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+  background-image: url("https://www.woodworkingnetwork.com/sites/woodworking/files/field/image/expresskitchens.jpg");
+  background-position: 10% 50%;
+  background-size: 350px 300px;
+  background-repeat: no-repeat;
+  background-blend-mode: hard-light;
+}
+
+.container .container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+
+.container .container-text h1 {
+  color: #48556a;
+  font-size: 20px;
+}
+
+.container .container-text p {
+  margin: 15px 0;
+  color: #6d7f97;
+  font-size: 13px;
+}
+
+.container .container-text .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .container-text .author img {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+}
+
+.container .container-text .author .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .container-text .author .info .name {
+  font-size: 13px;
+  font-weight: bold;
+  color: #48556a;
+}
+/*# sourceMappingURL=styles.css.map */
