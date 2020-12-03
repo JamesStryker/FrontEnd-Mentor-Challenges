@@ -40,19 +40,22 @@ body{
     background-repeat: no-repeat;
     height:100vh;
     font-family: 'Kumbh Sans', sans-serif;
+    font-size: 81.25%;
 }
 .container{
+    height: 30rem;
+    width: 55rem;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: $lightGreyBlue;
-    height:80vh;
+    box-shadow: 0rem 1rem 2rem #444;
 
     .container-image{
         display: block;
     }
     .container-accordian{
-        .title{
+        .faq{
             font-size: 20px;
             font-weight: 700;
         }
