@@ -1,0 +1,106 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+/************
+   Colors
+************/
+/************
+ Typography
+************/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("/Users/jamesmendez/Desktop/Challenges/FrontEnd-Mentor-Challenges/coding-bootcamp-testimonials-slider-master/images/pattern-curve.svg");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60vh;
+  width: 80vw;
+}
+
+.container .container-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .container-text .quote {
+  height: 6em;
+  width: 6em;
+  margin: 0 auto -3em 20%;
+  /*3rd element should be same as $textLarge*/
+}
+
+.container .container-text .testimonial {
+  color: #5e5e78;
+  font-size: 3em;
+  font-weight: 400;
+}
+
+.container .container-text .author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.container .container-text .author .name {
+  font-weight: 700;
+  color: #202046;
+  margin-right: 10px;
+}
+
+.container .container-text .author .title {
+  font-weight: 400;
+  color: #babacf;
+}
+
+.container .container-image {
+  background-image: url("/Users/jamesmendez/Desktop/Challenges/FrontEnd-Mentor-Challenges/coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container .container-image .tanyaImage {
+  height: 100%;
+  width: 100%;
+}
+/*# sourceMappingURL=styles.css.map */
