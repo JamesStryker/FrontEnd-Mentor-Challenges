@@ -37,8 +37,8 @@ body{
 }
 .container{
     display: flex;
-    height:60vh;;
-    width: 80vw;
+    height:60vh;
+    width:80vw;
 
     .container-text{
         display: flex;
@@ -76,8 +76,9 @@ body{
         background-size: contain;
 
         .tanyaImage{
-            height:100%;
-            width:100%;
+
         }
     }
+
 }
+
