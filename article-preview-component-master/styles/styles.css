@@ -121,15 +121,10 @@ body {
 }
 
 .container .container-text .container-bottom .share .shareIcon {
-  background-color: #48556a;
   height: 25px;
   width: 25px;
   border-radius: 50%;
   border: none;
   cursor: pointer;
-}
-
-.container .container-text .container-bottom .share .shareIcon image {
-  color: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
