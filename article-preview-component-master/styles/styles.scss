@@ -1,5 +1,11 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
 
 // ## Colors
 
@@ -12,28 +18,30 @@ $neutralLight:rgb(249, 249, 249);
 $neutralDark:rgb(9, 9, 9);
 
 // ##Body
-body{
+body {
     font-family: 'Manrope', sans-serif;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:$lightest;
+    background-color: $lightest;
 }
+
 // ##Container
-.container{
-    display:flex;
+.container {
+    display: flex;
     width: 700px;
     height: 270px;
     background-color: $neutralLight;
     border-radius: 10px;
     box-shadow: 5px 10px 15px -10px $light;
+    margin-bottom: 10px;
 
-    .container-image{
+    .container-image {
         width: 100%;
         height: 100%;
         border-radius: 10px 0 0 10px;
@@ -43,42 +51,84 @@ body{
         background-repeat: no-repeat;
         background-blend-mode: hard-light;
     }
-    .container-text{
+
+    .container-text {
         display: flex;
         flex-direction: column;
         padding: 20px;
 
-        h1{
+        h1 {
             color: $darkest;
             font-size: 20px;
         }
-        p{
+
+        p {
             margin: 15px 0;
             color: $medium;
             font-size: 13px;
         }
-        .author{
+
+        .container-bottom {
             display: flex;
+            justify-content: space-between;
 
-            img{
-                height: 35px;
-                width: 35px;
-                border-radius: 50%;
-            }
-            .info{
+            .author {
                 display: flex;
-                flex-direction: column;
-                
 
-                .name{
-                    font-size: 13px;
-                    font-weight: bold;
-                    color:$darkest;
+                img {
+                    height: 35px;
+                    width: 35px;
+                    border-radius: 50%;
                 }
-                .date{
+
+                .info {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 0 20px 0 10px;
+
+                    .name {
+                        font-size: 13px;
+                        font-weight: bold;
+                        color: $darkest;
+                        margin: 0;
+                    }
+
+                    .date {
+                        font-size: 11px;
+                        font-weight: bold;
+                        color: $light;
+                        margin: 2px;
+                    }
 
                 }
-                
+            }
+            .share{
+                .socialIcons{
+                    border-radius: 4px;
+                    padding:7px 14px;
+                    background-color: $darkest;
+                    
+
+                    span{
+                        color:$light;
+                    }
+                    i{
+                        color:$neutralLight;
+                        margin-left: 7px;
+                    }
+                }
+                .shareIcon{
+                   outline: none;
+                   height:25px;
+                   width: 25px;
+                   border-radius: 50%; 
+                   border: none;
+                   cursor: pointer;
+                }
+                .shareIcon:active{
+                    background-color: $darkest;
+                }
+               
             }
         }
     }

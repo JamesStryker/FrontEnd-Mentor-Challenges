@@ -39,6 +39,7 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: 5px 10px 15px -10px #9eafc2;
           box-shadow: 5px 10px 15px -10px #9eafc2;
+  margin-bottom: 10px;
 }
 
 .container .container-image {
@@ -74,19 +75,28 @@ body {
   font-size: 13px;
 }
 
-.container .container-text .author {
+.container .container-text .container-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .container-text .container-bottom .author {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.container .container-text .author img {
+.container .container-text .container-bottom .author img {
   height: 35px;
   width: 35px;
   border-radius: 50%;
 }
 
-.container .container-text .author .info {
+.container .container-text .container-bottom .author .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -94,11 +104,48 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  margin: 0 20px 0 10px;
 }
 
-.container .container-text .author .info .name {
+.container .container-text .container-bottom .author .info .name {
   font-size: 13px;
   font-weight: bold;
   color: #48556a;
+  margin: 0;
+}
+
+.container .container-text .container-bottom .author .info .date {
+  font-size: 11px;
+  font-weight: bold;
+  color: #9eafc2;
+  margin: 2px;
+}
+
+.container .container-text .container-bottom .share .socialIcons {
+  border-radius: 4px;
+  padding: 7px 14px;
+  background-color: #48556a;
+}
+
+.container .container-text .container-bottom .share .socialIcons span {
+  color: #9eafc2;
+}
+
+.container .container-text .container-bottom .share .socialIcons i {
+  color: #f9f9f9;
+  margin-left: 7px;
+}
+
+.container .container-text .container-bottom .share .shareIcon {
+  outline: none;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+.container .container-text .container-bottom .share .shareIcon:active {
+  background-color: #48556a;
 }
 /*# sourceMappingURL=styles.css.map */
