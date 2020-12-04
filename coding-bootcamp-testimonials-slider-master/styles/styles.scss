@@ -1,0 +1,83 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/************
+   Colors
+************/
+
+// Primary
+$darkBlue: hsl(240, 38%, 20%);
+$mediumBlue:hsl(240, 12%, 42%);
+$grayishBlue: hsl(240, 18%, 77%);
+//neutral
+$light:rgb(247, 246, 246);
+$dark:rgb(18, 18, 18);
+
+/************
+ Typography
+************/
+$textSmall:2em;
+$textLarge:3em;
+
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/Users/jamesmendez/Desktop/Challenges/FrontEnd-Mentor-Challenges/coding-bootcamp-testimonials-slider-master/images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position-y:bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    height:60vh;;
+    width: 80vw;
+
+    .container-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .quote{
+            height:6em;
+            width:6em;
+            margin: 0 auto -3em 20%; /*3rd element should be same as $textLarge*/
+        }
+        .testimonial{
+            color:$mediumBlue;
+            font-size: $textLarge;
+            font-weight: 400;
+        }
+        .author{
+            display: flex;
+            margin-top: 20px;
+            font-size: $textSmall;
+            .name{
+                font-weight: 700;
+                color:$darkBlue;
+                margin-right: 10px;
+            }
+            .title{
+                font-weight: 400;
+                color:$grayishBlue
+            }
+        }
+        
+    }
+    .container-image{
+        background-image: url("/Users/jamesmendez/Desktop/Challenges/FrontEnd-Mentor-Challenges/coding-bootcamp-testimonials-slider-master/images/pattern-bg.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+        .tanyaImage{
+            height:100%;
+            width:100%;
+        }
+    }
+}
