@@ -14,10 +14,81 @@ $Blue: hsl(248, 32%, 49%);
 $DarkBlue: hsl(249, 10%, 26%);
 $GrayBlue: hsl(246, 25%, 77%);
 
+//Fonts
+$white: #fff;
+
 /*Main*/
 body{
     margin:0;
     padding:0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    font-size: 62.5%;
+    height:100vh;
+    width:100vw;
+    background-image: url("/images/bg-intro-desktop.png");
+    background-color: $Red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.jumbotron{
+    display:flex;
+    max-width:60%;
+    height:70%;
+}
+.learn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px;
+    width:50%;
+
+    h1{
+        color:$white;
+        font-size: 2rem;
+        line-height: 2.1rem;
+    }
+    p{
+        color:$white;
+        font-size: 1rem;
+    }
+}
+.SignUp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width:50%;
+
+    .try{
+       height:10%;
+
+       button{
+           width:100%;
+           border-radius: 5px;
+           border:none;
+           color:$white;
+           background-color: $Blue;
+           height:100%;
+
+           span{
+               color: $GrayBlue;
+           }
+       }
+    }
+    .form{
+       height:70%;
+       margin-top: 20px;
+       background-color: $white;
+       border-radius: 5px;
+       padding: 10px;
+       }
+       input{
+           width:100%;
+       }
+       input:last-child{
+           border:1px solid green;
+           width:100%;
+       } 
+
+    }
