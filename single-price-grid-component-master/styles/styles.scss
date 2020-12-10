@@ -1,0 +1,144 @@
+/*Colors*/
+
+//Primary
+
+$Cyan: hsl(179, 62%, 43%);
+$CyanLight: hsl(179, 63%, 50%);
+$Yellow: hsl(71, 73%, 54%);
+$YellowDark:hsla(71, 73%, 54%, 0.927);
+
+//Neutral
+$White:hsl(0, 0%, 100%);
+$LightGray: hsl(204, 43%, 93%);
+$DarkGray: hsl(218, 22%, 67%);
+
+/*Main*/
+
+body{
+    font-family: 'Karla', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    height:100vh;
+    width:100vw;
+    background-color:$LightGray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 62.5%;
+}
+.container{
+    background-color:$White;
+    max-width: 70%;
+    border-radius: 10px;
+    box-shadow:5px 5px 20px 0px rgba(50, 50, 50, 0.31);
+}
+.container-top{
+    margin: 0;
+    line-height: 1.8rem;
+    h1{
+        color:$CyanLight;
+        font-size: 1.6rem;
+    }
+    h2{
+        color:$Yellow;
+        font-size: 1.2rem;
+    }
+    p{
+        color:$DarkGray;
+        font-size: 1rem;
+        padding-right:25px;
+    }
+}
+.container-bottom{
+    display:flex;
+    border-radius: 10px;
+
+    h2{
+        color:$White;
+        font-size: 1.3rem;
+        margin-top:0;
+    }
+    p{
+        color:$LightGray;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.2rem;
+    }
+    .left{
+        background-color: $Cyan;
+        width:50%;
+        border-radius: 0 0 0 10px;
+
+        .price{
+            display: table;
+            color:$CyanLight;
+            font-size: 1rem;
+            line-height: normal;
+            .number{
+                color:$White;
+                font-size: 1.6rem;  
+                margin-right: 10px; 
+            }
+            .lightText{
+                display: table-cell;
+                vertical-align: middle;
+            }
+        }
+        button{
+            width:235px;
+            height:25%;
+            font-size: 1.3rem;
+            color:$White;
+            background-color: $Yellow;  
+            border-radius: 5px;
+            border:none;
+            outline: 0;
+            box-shadow: 2px 2px 2px 0 rgba(50, 50, 50, 0.31);
+        }
+        button:hover{
+            cursor: pointer;
+            background-color:$YellowDark;
+        }
+        button:active{
+            margin: 1px;
+        }
+
+    }
+    .right{
+        background-color: $CyanLight;
+        width:50%;
+        border-radius: 0 0 10px 0;
+
+        p{
+            margin-bottom: 0;
+        }
+    }
+}
+.box{
+    padding:30px;
+}
+
+@media only screen and (max-width: 900px){
+    .container{
+        margin-top:20%;
+        height:100%;
+        width:100%;
+    }
+    .container-bottom{
+        flex-wrap: wrap;
+        width:100%;
+
+        .left{
+            width:100%;
+            border-radius: 0;
+        }
+        .right{
+            width:100%;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+    
+    
+}
