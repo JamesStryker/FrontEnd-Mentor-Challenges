@@ -102,5 +102,6 @@ body {
 .SignUp input:last-child {
   border: 1px solid green;
   width: 100%;
+  background-color: #38cc8c;
 }
 /*# sourceMappingURL=style.css.map */
