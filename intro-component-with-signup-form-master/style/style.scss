@@ -100,6 +100,7 @@ body{
        }
        input:last-child{
            border: none;
+           border-radius: 7px;
            cursor: pointer;
            width:100%;
            background-color: $Green;
@@ -117,3 +118,18 @@ body{
            }
        }
     }
+/*Mobile*/
+@media only screen and (max-width: 900px){
+   .jumbotron{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       text-align: center;
+       min-width:100vw;
+       height:100vh;
+       
+   }
+   .terms{
+       margin-top: 15px;
+   }
+}
