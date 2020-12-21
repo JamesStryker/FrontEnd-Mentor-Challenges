@@ -25,12 +25,8 @@ body{
     justify-content: center;
     align-items: center;
 }
-.container{
-   display: flex;
-   flex-direction: column;
 
-   .logo{
-       width:100px;
-       height:auto;
-   }
+.logo{
+    width:100px;
+    height:auto;
 }
