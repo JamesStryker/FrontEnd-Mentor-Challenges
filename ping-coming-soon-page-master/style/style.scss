@@ -22,11 +22,32 @@ body{
     font-family: 'Libre Franklin', sans-serif;
     width:100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+header{
+    text-align: center;
+}
 .logo{
+    padding-top: 30%;
     width:100px;
     height:auto;
+}
+h1 span{
+    color:$Gray;
+    font-weight: 400;
+}
+h3{
+    color:$Gray;
+}
+.dashboard{
+    padding:50px;
+    width: 100%;
+}
+.dashboardImg{
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
 }
