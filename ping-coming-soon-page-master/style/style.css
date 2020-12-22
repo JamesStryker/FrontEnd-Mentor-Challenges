@@ -5,6 +5,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 62.5%;
   font-family: 'Libre Franklin', sans-serif;
   width: 100vw;
   display: -webkit-box;
@@ -24,12 +25,14 @@ body {
 
 header {
   text-align: center;
+  font-size: 1.8em;
 }
 
 .logo {
   padding-top: 30%;
   width: 100px;
   height: auto;
+  margin-bottom: 20px;
 }
 
 h1 span {
@@ -39,6 +42,7 @@ h1 span {
 
 h3 {
   color: #969696;
+  font-size: 1em;
 }
 
 .subscribe {
@@ -50,15 +54,17 @@ h3 {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 0 20px;
+  font-size: 1em;
 }
 
 .email {
   border: 1px solid #969696;
   border-radius: 30px;
-  margin-bottom: 20px;
-  height: 30px;
-  width: 100%;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 100% -25px;
   outline: none;
+  padding: 0 25px;
 }
 
 .button {
