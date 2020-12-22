@@ -41,12 +41,39 @@ h3 {
   color: #969696;
 }
 
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+}
+
+.email {
+  border: 1px solid #969696;
+  border-radius: 30px;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 100%;
+  outline: none;
+}
+
+.button {
+  border: 1px solid #4f7df3;
+  background-color: #4f7df3;
+  color: white;
+}
+
 .dashboard {
   padding: 50px;
   width: 100%;
 }
 
 .dashboardImg {
+  min-width: 350px;
   width: 40%;
   margin: 0 auto;
   display: block;
