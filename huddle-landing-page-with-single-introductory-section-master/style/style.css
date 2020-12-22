@@ -11,6 +11,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.logo {
+  height: 30px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
 section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,6 +32,26 @@ section {
   color: #fff;
 }
 
+.illustration {
+  width: 100%;
+  height: auto;
+}
+
+.register {
+  color: #674baf;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  width: 200px;
+  height: 35px;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 21px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 21px 5px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  margin: 25px 0;
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,5 +59,49 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 50px;
+}
+
+.icon {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 7px;
+  margin: 0 10px;
+  height: 20px;
+  width: 20px;
+}
+
+/*Desktop View*/
+@media screen and (min-width: 900px) {
+  section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .image {
+    width: 50%;
+  }
+  .text {
+    width: 50%;
+    height: 100%;
+    text-align: left;
+    padding: 25px;
+  }
+  .text p {
+    margin: 25px 0;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 /*# sourceMappingURL=style.css.map */
