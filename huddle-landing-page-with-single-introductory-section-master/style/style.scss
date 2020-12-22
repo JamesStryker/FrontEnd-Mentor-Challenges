@@ -57,6 +57,9 @@ footer{
 }
 /*Desktop View*/
 @media screen and (min-width:900px){
+    body{
+        background-image: url("/images/bg-desktop.svg");
+    }
     section{
         display: flex;
         flex-direction: row;
