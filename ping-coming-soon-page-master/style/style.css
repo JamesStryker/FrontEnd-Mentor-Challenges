@@ -65,12 +65,25 @@ h3 {
   width: 100% -25px;
   outline: none;
   padding: 0 25px;
+  -webkit-box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 5px 11px 1px rgba(0, 0, 0, 0.25);
 }
 
 .button {
   border: 1px solid #4f7df3;
   background-color: #4f7df3;
   color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #5f88f2;
+  border: 1px solid #5f88f2;
+}
+
+.button:active {
+  background-color: #c2d3ff;
+  border: 1px solid #c2d3ff;
 }
 
 .dashboard {
@@ -84,5 +97,41 @@ h3 {
   margin: 0 auto;
   display: block;
   height: auto;
+}
+
+.icon {
+  border: 1px solid #969696;
+  border-radius: 50%;
+  padding: 10px;
+  color: #4f7df3;
+  margin: 20px 5px;
+  height: 2.5em;
+  width: 2.5em;
+}
+
+footer p {
+  color: #969696;
+}
+
+@media screen and (min-width: 900px) {
+  .subscribe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .email {
+    -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+            flex-grow: 2;
+  }
+  .button {
+    margin-left: 20px;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+  }
 }
 /*# sourceMappingURL=style.css.map */
