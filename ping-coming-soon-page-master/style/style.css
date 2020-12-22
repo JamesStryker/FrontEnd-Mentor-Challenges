@@ -5,6 +5,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-size: 62.5%;
   font-family: 'Libre Franklin', sans-serif;
   width: 100vw;
   display: -webkit-box;
@@ -22,9 +23,66 @@ body {
           align-items: center;
 }
 
+header {
+  text-align: center;
+  font-size: 1.8em;
+}
+
 .logo {
-  padding: 10px;
+  padding-top: 30%;
   width: 100px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  color: #969696;
+  font-weight: 400;
+}
+
+h3 {
+  color: #969696;
+  font-size: 1em;
+}
+
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 20px;
+  font-size: 1em;
+}
+
+.email {
+  border: 1px solid #969696;
+  border-radius: 30px;
+  margin-bottom: 10px;
+  height: 40px;
+  width: 100% -25px;
+  outline: none;
+  padding: 0 25px;
+}
+
+.button {
+  border: 1px solid #4f7df3;
+  background-color: #4f7df3;
+  color: white;
+}
+
+.dashboard {
+  padding: 50px;
+  width: 100%;
+}
+
+.dashboardImg {
+  min-width: 350px;
+  width: 40%;
+  margin: 0 auto;
+  display: block;
   height: auto;
 }
 /*# sourceMappingURL=style.css.map */

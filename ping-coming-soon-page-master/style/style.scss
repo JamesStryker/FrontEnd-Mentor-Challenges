@@ -19,6 +19,7 @@ body{
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-size: 62.5%;
     font-family: 'Libre Franklin', sans-serif;
     width:100vw;
     display: flex;
@@ -26,9 +27,52 @@ body{
     justify-content: center;
     align-items: center;
 }
-
+header{
+    text-align: center;
+    font-size: 1.8em;
+}
 .logo{
-    padding:10px;
+    padding-top: 30%;
     width:100px;
     height:auto;
+    margin-bottom: 20px;
+}
+h1 span{
+    color:$Gray;
+    font-weight: 400;
+}
+h3{
+    color:$Gray;
+    font-size: 1em;
+}
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    padding:0 20px;
+    font-size: 1em;
+}
+.email{
+    border:1px solid $Gray;
+    border-radius: 30px;
+    margin-bottom: 10px;
+    height:40px;
+    width:100% -25px;
+    outline:none;
+    padding: 0 25px;
+}
+.button{
+    border:1px solid $Blue;
+    background-color: $Blue;
+    color:white;
+}
+.dashboard{
+    padding:50px;
+    width: 100%;
+}
+.dashboardImg{
+    min-width: 350px;
+    width: 40%;
+    margin: 0 auto;
+    display: block;
+    height: auto;
 }
