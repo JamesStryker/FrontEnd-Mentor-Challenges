@@ -7,7 +7,7 @@ body {
           box-sizing: border-box;
   font-size: 62.5%;
   font-family: 'Josefin Sans', sans-serif;
-  text-align: center;
+  background: linear-gradient(135deg, white, #fff5f5);
 }
 
 .container {
@@ -15,24 +15,107 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 40%;
-  width: 70%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.image {
-  max-width: 100%;
-  max-height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
+.logo {
+  margin: 30px 50px;
 }
 
-/*Footer*/
-.attribution {
-  font-size: 11px;
+.hero {
+  height: 300px;
+  overflow: hidden;
+  background-size: cover;
+  background-image: url("/images/hero-mobile.jpg");
+}
+
+.comingSoon {
   text-align: center;
+  padding: 20px 50px;
 }
 
-.attribution a {
-  color: #3e52a3;
+h1 {
+  letter-spacing: 5px;
+  font-size: 4.5em;
+  font-weight: 300;
+}
+
+h1 span {
+  color: #ce9797;
+}
+
+p {
+  font-size: 1.6em;
+  color: #ce9797;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid #cecece;
+  border-radius: 30px;
+  height: 35px;
+}
+
+input {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+  border: none;
+  border-radius: 50%;
+  color: #ce9797;
+  padding: 10px;
+}
+
+input::-webkit-input-placeholder {
+  color: #ce9797;
+  padding: 0 25px;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  color: #ce9797;
+  padding: 0 25px;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  color: #ce9797;
+  padding: 0 25px;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #ce9797;
+  padding: 0 25px;
+  font-family: 'Josefin Sans';
+  font-size: 16px;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  padding: none;
+  width: 20%;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #f8bfbf, #ee8c8c);
+  color: white;
+  cursor: pointer;
+  -webkit-box-shadow: 4px 4px 25px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 25px 4px rgba(0, 0, 0, 0.25);
 }
 /*# sourceMappingURL=style.css.map */
