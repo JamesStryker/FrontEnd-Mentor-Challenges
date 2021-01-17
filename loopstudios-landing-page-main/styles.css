@@ -5,6 +5,10 @@ body{
     background: #fff;
     font-family: 'Alata', sans-serif;
 }
+.navToggle, .scrolled{
+    background-color: black;
+    transition: all .5s;
+}
 h2{
     font-family: 'Josefin Sans', sans-serif;
     font-size: 2rem;
