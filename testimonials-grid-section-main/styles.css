@@ -3,25 +3,58 @@ Moderate violet: hsl(263, 55%, 52%)
 Very dark grayish blue: hsl(217, 19%, 35%)
 Very dark blackish blue: hsl(219, 29%, 14%)
 White: hsl(0, 0%, 100%) */
+body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
 
-body{
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    padding:0;
-    margin: 0;
-    box-sizing: border-box;
+img {
+  border-radius: 50%;
 }
-img{
-    border-radius: 50%;
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
 }
-.name{
-    font-size: 20px;
-    font-weight: 500;
+
+.title {
+  font-size: 20px;
+  font-weight: 500;
+  opacity: 50%;
 }
-.title{
-    font-size: 20px;
-    font-weight: 500;
-    opacity: 50%;
+
+.light-quote {
+  opacity: 70%;
 }
-.light-quote{
-    opacity: 70%;
+
+.container {
+  border-radius: 15px;
+  padding: 5px;
 }
+
+.dan {
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #7541c8;
+}
+
+.jon {
+  background-color: #48556a;
+}
+
+.jean {
+  background-color: white;
+}
+
+.pat {
+  background-color: #19212e;
+}
+
+.kira {
+  background-color: white;
+}
+/*# sourceMappingURL=styles.css.map */
