@@ -9,6 +9,7 @@ body{
     padding:0;
     margin: 0;
     box-sizing: border-box;
+    background-color: hsl(218, 22%, 79%);
 }
 img{
     border-radius: 50%;
@@ -24,6 +25,12 @@ img{
 }
 .light-quote{
     opacity: 70%;
+}
+.text-dark{
+    color:hsl(219, 29%, 14%);
+}
+.text-light{
+    color:white;
 }
 .container{
     border-radius: 15px;

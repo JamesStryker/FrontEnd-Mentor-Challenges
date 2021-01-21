@@ -9,6 +9,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: #bec6d5;
 }
 
 img {
@@ -28,6 +29,14 @@ img {
 
 .light-quote {
   opacity: 70%;
+}
+
+.text-dark {
+  color: #19212e;
+}
+
+.text-light {
+  color: white;
 }
 
 .container {
