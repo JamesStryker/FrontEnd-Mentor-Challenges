@@ -33,6 +33,7 @@ img {
 .container {
   border-radius: 15px;
   padding: 5px;
+  margin: 20px auto;
 }
 
 .dan {
