@@ -5,35 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Interactive pricing component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  Simple, traffic-based pricing
-  Sign-up for our 30-day trial. No credit card required. 
-
-  Pageviews
-  $ /month
-
-  Monthly Billing
-  Yearly Billing 25% discount
-
-  Unlimited websites
-  100% data ownership
-  Email reports
-
-  Start my trial
+<div class="heading">
+  <h2>Simple, traffic-based pricing</h2>
+  <h3>  Sign-up for our 30-day trial. <br> No credit card required. </h3>
+</div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="priceGuide">
+  <form class="interactive">
+    <h3>100K Pageviews</h3> 
+    <div class="form-top">
+      <label for="formControlRange"></label>
+      <input type="range" class="form-control-range" id="formControlRange" min="0" max="200" step="10">
+    </div>
+    <h3><span class="dollar">$ 16.00</span> /month </h3>
+
+    <div class="form-bottom">
+      <h4>Monthly Billing</h4>
+      <label class="toggle-control">
+        <input type="checkbox" checked="checked">
+        <span class="control"></span>
+      </label>
+        <h4>Yearly Billing 25% discount</h4> 
+    </div>
+     
+  </form>
+  <div class="incentives">
+    <span class="check"></span><h4>Unlimited websites</h4>
+    <span class="check"></span><h4>100% data ownership</h4>
+    <span class="check"></span><h4>Email reports</h4>
+  
+    <button>Start my trial</button> 
   </div>
+</div>
+
+<script src="index.js"></script>
 </body>
 </html>
